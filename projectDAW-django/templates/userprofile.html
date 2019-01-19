@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>We Om & Co</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" media:"screen(max-width:380px)" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.5/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" href="skins/skin-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <span class="titulo"><b>We Om </b>& Co.</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account Menu -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ user.username }}
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+            <a class="dropdown-item" href="#">My account</a>
+            <a class="dropdown-item" href="#">Change password</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          {{ user.username }}
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Administracion</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="#"><i class="fa fa-shower"></i> <span>SPA</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-book"></i> <span>Cursos</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Yoga Fly Free</a></li>
+            <li><a href="#">Cursos Regulares</a></li>
+            <li><a href="#">Clases Personalizadas</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-shopping-basket"></i> <span>Tienda</span>
+            <span class="pull-right-container">
+                <i class="fa fa-book-left pull-right"></i>
+              </span>
+          </a>
+        <ul class="treeview-menu">
+            <li><a href="#">Articulo</a></li>
+            <li><a href="#">Compra</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Cabecera
+        <small>Opcionales</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+
+        <!-- INICIO SECCION -->
+      <section class="personal" id="personal">
+        <div class="container">
+
+          <div class="container gallery-container" id="maestros">
+
+            <div class="tz-gallery">
+
+            <div class="row">
+              <h1 class="text-center">
+                CURSOS
+              </h1>
+
+              <p class="page-description text-center">
+                Estos son los cursos!!!!
+              </p>
+            </div>
+
+                <div class="row">
+                    <div class="col-lg-5 mb-4">
+                        <div class="card text-center">
+                            <a class="lightbox" >
+                              <img id="yoga1" class="card-img-top">
+                              <a data-target="#acceso" class=" btn btn-primary" data-toggle="modal">Pre-registrese</a>
+                            </a>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <div class="card text-center">
+                            <a class="lightbox">
+                              <img id="yoga2" class="card-img-top">
+                            <a data-target="#acceso" class="btn btn-primary"  data-toggle="modal">Pre-registrese</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="acceso">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                  <div class="modal-body">
+                        <form>
+                      <div class="form-group">
+                        <label for="inputAddress">
+                          Correo
+                        </label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Correo">
+                      </div>
+
+                      <div class="form-group">
+                          <label for="inputAddress2">
+                            Contraseña
+                          </label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Contraseña">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary col-6">Entrar</button>
+                    </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+    </div>
+            </div>
+          </div>
+          </div>
+      </section>
+
+        <!-- FIN SECCION -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2019 <a href="#">We Om & Co</a>.</strong> Todos lo derechos reservados.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script
+  src="https://code.jquery.com/jquery-3.0.0.js"
+  integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="
+  crossorigin="anonymous"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- AdminLTE App -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.5/js/adminlte.min.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>

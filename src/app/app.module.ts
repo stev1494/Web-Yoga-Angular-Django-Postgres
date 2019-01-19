@@ -14,6 +14,8 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { HorarioComponent } from './pages/horario/horario.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { ColaboradoresComponent } from './pages/colaboradores/colaboradores.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ColaboradoresComponent } from './pages/colaboradores/colaboradores.comp
     ServiciosComponent,
     HorarioComponent,
     GaleriaComponent,
-    ColaboradoresComponent
+    ColaboradoresComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
